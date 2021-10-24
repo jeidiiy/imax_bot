@@ -1,1 +1,1 @@
-worker: python movie_crawler
+worker: python movie_crawler.py
