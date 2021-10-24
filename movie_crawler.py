@@ -33,9 +33,6 @@ def job_func():
             bot.sendMessage(chat_id=CHANNEL_ID,
                             text=title + " IMAX 예매가 열렸습니다.")
             sched.pause()
-    else:
-        bot.sendMessage(chat_id=CHANNEL_ID,
-                            text="IMAX 예매가 열리지 않았습니다.")
 
 
 sched = BlockingScheduler()
