@@ -7,8 +7,8 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 load_dotenv(verbose=True)
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-CHANNEL_ID = os.getenv("CHANNEL_ID")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHANNEL_ID = os.environ.get("CHANNEL_ID")
 
 bot = telegram.Bot(TELEGRAM_TOKEN)
 url = "http://www.cgv.co.kr/common/showtimes/iframeTheater.aspx?areacode=01&theatercode=0013&date="
